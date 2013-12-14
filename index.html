@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
     <title>Art of Code</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    <script type="text/javascript" src="lib/moment.min.js"></script>
+    <script type="text/javascript" src="js/IndexController.js"></script>
+    <link rel="stylesheet"  type="text/css" href="css/base.css"  />
 </head>
 <body>
-    <div>
-        <p>Work in progress - estimated to be up and running in January 2014</p>
+    <div class="container" ng-controller="IndexController">
+        <header><h1>Art of Code</h1></header>
+        <p>Work in progress - estimated to be up and running in {{releaseDate}}</p>
+        <footer>Copyright &copy; 2014 Art of Code.  All Rights Reserved.</footer>
     </div>
 </body>
 </html>
